@@ -48,7 +48,15 @@
   <section class="showdown container">
     <div class="showdown-grid">
       <div class="showdown-side lem">
-        <img src="https://hellonancy.com/cdn/shop/files/WhatsAppImage2023-11-18at14.19.19_2acc31e8.webp" alt="Lem by Hello Nancy">
+        <div class="lem-gallery">
+          <img class="lem-gallery-main" id="lem-main-img" src="https://cdn.shopify.com/s/files/1/0726/3764/5121/files/WhatsAppImage2023-11-18at14.19.19_2acc31e8.webp?v=1762419856" alt="Lem by Hello Nancy">
+          <div class="lem-gallery-thumbs">
+            <img src="https://cdn.shopify.com/s/files/1/0726/3764/5121/files/WhatsAppImage2023-11-18at14.19.19_2acc31e8.webp?v=1762419856" alt="Lem 1" class="active" onclick="document.getElementById('lem-main-img').src=this.src;document.querySelectorAll('.lem-gallery-thumbs img').forEach(i=>i.classList.remove('active'));this.classList.add('active')">
+            <img src="https://cdn.shopify.com/s/files/1/0726/3764/5121/files/IMG_3323.jpg?v=1762419856" alt="Lem 2" onclick="document.getElementById('lem-main-img').src=this.src;document.querySelectorAll('.lem-gallery-thumbs img').forEach(i=>i.classList.remove('active'));this.classList.add('active')">
+            <img src="https://cdn.shopify.com/s/files/1/0726/3764/5121/files/IMG_3322.jpg?v=1762419856" alt="Lem 3" onclick="document.getElementById('lem-main-img').src=this.src;document.querySelectorAll('.lem-gallery-thumbs img').forEach(i=>i.classList.remove('active'));this.classList.add('active')">
+            <img src="https://cdn.shopify.com/s/files/1/0726/3764/5121/files/IMG_3325.jpg?v=1762419856" alt="Lem 4" onclick="document.getElementById('lem-main-img').src=this.src;document.querySelectorAll('.lem-gallery-thumbs img').forEach(i=>i.classList.remove('active'));this.classList.add('active')">
+          </div>
+        </div>
         <div class="showdown-name">Lem by Nancy</div>
         <div class="showdown-price">$89</div>
       </div>
@@ -360,6 +368,49 @@
     </div>
   </section>
 
+  <!-- UGC Videos -->
+  <section class="ugc-section container">
+    <h2>Real People. Real Reactions.</h2>
+    <div class="ugc-grid">
+      <div class="ugc-card" onclick="playUgc(this)">
+        <div class="ugc-video-wrap">
+          <video playsinline preload="metadata">
+            <source src="//hellonancy.com/cdn/shop/videos/c/vp/c6131e25558f4852ba469c24dc5d32b2/c6131e25558f4852ba469c24dc5d32b2.HD-1080p-2.5Mbps-25762174.mp4?v=0" type="video/mp4">
+          </video>
+          <svg class="ugc-play-btn" width="56" height="56" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity="0.8" d="M27.1158 50.3593C39.9524 50.3593 50.3586 39.9532 50.3586 27.1166C50.3586 14.2799 39.9524 3.87378 27.1158 3.87378C14.2792 3.87378 3.87305 14.2799 3.87305 27.1166C3.87305 39.9532 14.2792 50.3593 27.1158 50.3593Z" fill="#FF30CC"/><path d="M36.8404 25.6801C37.6906 26.1791 37.6906 27.4082 36.8404 27.9072L21.4332 36.9506C20.5724 37.4559 19.4883 36.8352 19.4883 35.837V17.7503C19.4883 16.7521 20.5724 16.1314 21.4332 16.6366L36.8404 25.6801Z" fill="white"/></svg>
+        </div>
+        <div class="ugc-caption">“Ohhhh Lem, oh Lem, oh Lem...”</div>
+      </div>
+      <div class="ugc-card" onclick="playUgc(this)">
+        <div class="ugc-video-wrap">
+          <video playsinline preload="metadata">
+            <source src="//hellonancy.com/cdn/shop/videos/c/vp/564895d0b5124b13bd102bdc6eacb42d/564895d0b5124b13bd102bdc6eacb42d.HD-1080p-2.5Mbps-63019819.mp4?v=0" type="video/mp4">
+          </video>
+          <svg class="ugc-play-btn" width="56" height="56" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity="0.8" d="M27.1158 50.3593C39.9524 50.3593 50.3586 39.9532 50.3586 27.1166C50.3586 14.2799 39.9524 3.87378 27.1158 3.87378C14.2792 3.87378 3.87305 14.2799 3.87305 27.1166C3.87305 39.9532 14.2792 50.3593 27.1158 50.3593Z" fill="#FF30CC"/><path d="M36.8404 25.6801C37.6906 26.1791 37.6906 27.4082 36.8404 27.9072L21.4332 36.9506C20.5724 37.4559 19.4883 36.8352 19.4883 35.837V17.7503C19.4883 16.7521 20.5724 16.1314 21.4332 16.6366L36.8404 25.6801Z" fill="white"/></svg>
+        </div>
+        <div class="ugc-caption">“It makes throbbing motions...”</div>
+      </div>
+      <div class="ugc-card" onclick="playUgc(this)">
+        <div class="ugc-video-wrap">
+          <video playsinline preload="metadata">
+            <source src="//hellonancy.com/cdn/shop/videos/c/vp/463d9179e9d442c6ac9a64bf004a7b67/463d9179e9d442c6ac9a64bf004a7b67.HD-720p-1.6Mbps-25762175.mp4?v=0" type="video/mp4">
+          </video>
+          <svg class="ugc-play-btn" width="56" height="56" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity="0.8" d="M27.1158 50.3593C39.9524 50.3593 50.3586 39.9532 50.3586 27.1166C50.3586 14.2799 39.9524 3.87378 27.1158 3.87378C14.2792 3.87378 3.87305 14.2799 3.87305 27.1166C3.87305 39.9532 14.2792 50.3593 27.1158 50.3593Z" fill="#FF30CC"/><path d="M36.8404 25.6801C37.6906 26.1791 37.6906 27.4082 36.8404 27.9072L21.4332 36.9506C20.5724 37.4559 19.4883 36.8352 19.4883 35.837V17.7503C19.4883 16.7521 20.5724 16.1314 21.4332 16.6366L36.8404 25.6801Z" fill="white"/></svg>
+        </div>
+        <div class="ugc-caption">“It is beautiful, it is wonderful”</div>
+      </div>
+      <div class="ugc-card" onclick="playUgc(this)">
+        <div class="ugc-video-wrap">
+          <video playsinline preload="metadata">
+            <source src="//hellonancy.com/cdn/shop/videos/c/vp/c54f3800476c4d42b55c32f137864a19/c54f3800476c4d42b55c32f137864a19.HD-1080p-3.3Mbps-64862441.mp4?v=0" type="video/mp4">
+          </video>
+          <svg class="ugc-play-btn" width="56" height="56" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity="0.8" d="M27.1158 50.3593C39.9524 50.3593 50.3586 39.9532 50.3586 27.1166C50.3586 14.2799 39.9524 3.87378 27.1158 3.87378C14.2792 3.87378 3.87305 14.2799 3.87305 27.1166C3.87305 39.9532 14.2792 50.3593 27.1158 50.3593Z" fill="#FF30CC"/><path d="M36.8404 25.6801C37.6906 26.1791 37.6906 27.4082 36.8404 27.9072L21.4332 36.9506C20.5724 37.4559 19.4883 36.8352 19.4883 35.837V17.7503C19.4883 16.7521 20.5724 16.1314 21.4332 16.6366L36.8404 25.6801Z" fill="white"/></svg>
+        </div>
+        <div class="ugc-caption">“She looks innocent… but she’s about to get zesty.”</div>
+      </div>
+    </div>
+  </section>
+
   <section class="cta-section container">
     <div class="cta-box">
       <h2>Simple. Reliable. Brilliant.</h2>
@@ -390,6 +441,9 @@
     });
     const sticky = document.getElementById('stickyCta');
     window.addEventListener('scroll', () => sticky.classList.toggle('visible', window.scrollY > 600));
+  </script>
+  <script>
+  function playUgc(card){var v=card.querySelector('video'),btn=card.querySelector('.ugc-play-btn');document.querySelectorAll('.ugc-card video').forEach(function(o){if(o!==v){o.pause();o.closest('.ugc-card').querySelector('.ugc-play-btn').classList.remove('hidden')}});if(v.paused){v.play();btn.classList.add('hidden')}else{v.pause();btn.classList.remove('hidden')}}
   </script>
 </body>
 </html>
